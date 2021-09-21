@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./resources/hussar.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyFont';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#adderBox {
+  background-color: purple;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+#addForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.card {
+  padding: 2%;
+  border: 1px solid blue;
+  border-radius: 25px;
+  /* background-repeat:  no-repeat; */
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  /* min-height: 400px; */
+}
+
+.location {
+  font-size: 35px;
+  text-shadow: 2px 2px #f8f8f8;
+}
+
+.condition,
+.temperature {
+  color: red;
+  font-size: 25px;
+}
+
+.wind,
+.rain {
+  color: chocolate;
+  font-size: 25px;
+}
+
+.hourly {
+  color: blue;
+}
+
+.daily {
+  color: green;
+}
