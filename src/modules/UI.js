@@ -25,6 +25,12 @@ export default class UI {
     location.innerHTML = city.location;
     card.append(location);
 
+    // time
+    const time = document.createElement('div');
+    time.setAttribute('class', 'time');
+    time.innerHTML = city.time;
+    card.append(time);
+
     // temperature
     const temperature = document.createElement('div');
     temperature.setAttribute('class', 'temperature');

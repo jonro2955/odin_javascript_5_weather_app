@@ -1,3 +1,4 @@
+// Build command: $ npm run build
 import './style.css';
 import PlusIcon from './resources/plus-icon.png';
 import City from './class/City.js';

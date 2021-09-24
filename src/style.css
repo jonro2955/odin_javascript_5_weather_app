@@ -50,6 +50,11 @@ body {
   text-shadow: 2px 2px #f8f8f8;
 }
 
+.time{
+  font-size: 25px;
+  text-shadow: 2px 2px #f8f8f8;
+}
+
 .condition,
 .temperature {
   color: red;

@@ -2,6 +2,7 @@ export default class City {
   constructor(scale, data) {
     this.name = data.cur.name;
     this.location = `${data.cur.name}, ${data.cur.sys.country}`;
+    this.time = this.getDate(data.cur.dt);
     this.scale = scale === 'imperial' ? '&deg;F' : '&deg;C';
     this.condition = data.cur.weather[0].description.toUpperCase();
     this.main = data.cur.weather[0].main;
@@ -10,6 +11,15 @@ export default class City {
     this.wind = `Wind: ${data.cur.wind.speed} km/h`;
     this.hourly5 = this.getHourlys(data.fore);
     this.daily5 = this.getDailys(data.fore);
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  getDate(unixTimeStamp) {
+    const date = new Date(unixTimeStamp * 1000);
+    const hours = date.getHours();
+    const minutes = `0${date.getMinutes()}`;
+    return `${date.toLocaleDateString('en-US')}, ${hours}:${minutes.substr(-2)}`;
+    // return `${hours}:${minutes.substr(-2)}`;
   }
 
   getHourlys(fore) {
