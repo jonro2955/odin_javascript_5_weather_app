@@ -1,4 +1,4 @@
-#odin_javascript_5_weather_app
+# odin_javascript_5_weather_app
 
 Preview: https://jonro2955.github.io/odin_javascript_5_weather_app/
 
